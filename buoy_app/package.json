@@ -1,0 +1,25 @@
+{
+  "name": "buoy_app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "cookie-parser": "^1.4.3",
+    "eventsource": "^1.0.5",
+    "express": "^4.16.3",
+    "morgan": "^1.9.0",
+    "sse": "0.0.8",
+    "ws": "^6.0.0"
+  },
+  "devDependencies": {
+    "chai": "^4.1.2",
+    "mocha": "^5.2.0",
+    "supertest": "^3.1.0"
+  },
+  "scripts": {
+    "test": "node_modules/.bin/mocha"
+  },
+  "author": "jackgrossman",
+  "license": "ISC"
+}

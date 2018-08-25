@@ -1,0 +1,13 @@
+[
+  {
+    method: "updateBuoyData",
+    params: {
+      name: "scripps_nearshore",
+      height: 13,
+      period: 13
+    }
+  },
+  {
+    result: "ok"
+  }
+];
