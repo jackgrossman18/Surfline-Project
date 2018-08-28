@@ -8,8 +8,12 @@ The data that is sent to the client from the server comes from buoys in the paci
 
 This backend serves the following purposes.
 
+### Create a server with WebSockets
+
 * Create a server for initiating a websocket
   * Using these websockets to send and receive json-rpc objects
+
+### Send JSON-RPC objects through these websockets, recieve an 'ok' response to assure objects have been recieved.
 
 * Create all methods through which JSON-RPC objects will be sent
   * JSON-RPC Request
@@ -33,6 +37,8 @@ This backend serves the following purposes.
   "id": "3f052f4f-2f4a-46d8-aee7-fb6639942795"
 }
 ````
+
+### Store all added buoys, updated buoys and notifications from buoys as new data comes in.
 
 * Create means through which all important JSON-RPC objects will be stored
   * Store addBuoy methods
