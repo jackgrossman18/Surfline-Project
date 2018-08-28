@@ -2,6 +2,10 @@
 
 ## This is the backend of my Surfline project
 
+At a high-level, this backend intends to create a server, instantiate websockets, and then use those websockets to send data in the form of a JSON-RPC object between the server and the client. 
+
+The data that is sent to the client from the server comes from buoys in the pacific ocean. They are intended to supply the information that will allow for Surfline's rating system to rate the current surf conditions at your favorite surf spot.
+
 This backend serves the following purposes.
 
 * Create a server for initiating a websocket
