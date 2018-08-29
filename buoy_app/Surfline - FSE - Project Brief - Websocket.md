@@ -168,6 +168,10 @@ Buoys must be sent to the client in the following format:
   }
 }
 ```
+{
+\
+}
+
 
 Since this is a notification, no `id` parameter is sent and no response is
 needed from the client.
