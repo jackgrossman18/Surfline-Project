@@ -68,4 +68,19 @@ The test directory was used to for the follwing purposes.
 
 * Test the exchange of json-rpc objects, request and response.
 * Testing that a client was active and capable of being sent messages
-* Test server for sending all of the aforementioned steps
+* Test server for sending all of the aforementioned steps\
+
+### Activating the App
+
+In order run the app take the following steps.. 
+* In the command line, within the 'buoy_app' directory, run 'node index.js'
+* In your web browser open the project test page (https://www.surfline.com/careers/engineers/take-home-projects/buoys-tests/start.html#)
+* Enter ws://localhost:8080/inBuoy into the host field
+* Click the connect button.
+* Clone down the code within the front end repository (https://github.com/jackgrossman18/Surfline-Project-Frontend)
+* Navigate to the surflinebuoys directory
+* Run npm install, then npm run start
+* Go back to the project tests webpage, then run tests
+* Navigate back to the webmap that should have opened automatically within your browser.
+* You should see styled buoys, click on them to access the current conditions
+
