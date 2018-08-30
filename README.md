@@ -30,11 +30,8 @@ The JSON_RPC file builds all methods through which these objecst will be sent an
 
 * Build Request buils a JSONRPC request
 * Build Response builds the 'ok' response from a sucessfully requested JSON RPC object
-* Build Notification builds the buoy update notification for incoming new buoy data
-* Build Error, builds all of the potential JSON RPC response errors (invalid JSON, request object, method etc.)
 
-
-### Send JSON-RPC objects through these websockets, recieve an 'ok' response to assure objects have been recieved.
+Here is an example of that request, response exchange...
 
 * Create all methods through which JSON-RPC objects will be sent
   * JSON-RPC Request
@@ -59,14 +56,13 @@ The JSON_RPC file builds all methods through which these objecst will be sent an
 }
 ````
 
-### Storage
 
-Store all added buoys, updated buoys and notifications from buoys as new data comes in.
 
-* Create means through which all important JSON-RPC objects will be stored
-  * Store addBuoy methods
-  * Store updateBuoyData methods
-  * Store subscribeBuoyData methods
-  * Store buoyNotifications
+* Build Notification builds the buoy update notification for incoming new buoy data
+* Build Error, builds all of the potential JSON RPC response errors (invalid JSON, request object, method etc.)
 
- 
+
+### Send JSON-RPC objects through these websockets, recieve an 'ok' response to assure objects have been recieved.
+
+
+
