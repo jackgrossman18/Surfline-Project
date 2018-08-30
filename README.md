@@ -8,10 +8,31 @@ The data that is sent to the client from the server comes from buoys in the paci
 
 This backend serves the following purposes.
 
-### Create a server with WebSockets
+#### Server
 
-* Create a server for initiating a websocket
-  * Using these websockets to send and receive json-rpc objects
+The server allows for the instantiation of a new server, the creation of an 'inBuoy' websocket and a 'outBuoy' websocket for sending jsonrpc objects that contain buoys data and subsequently receiving jsonrpc response objects that notify the server that the objects have been received properly. 
+
+#### Storage
+
+The storage file allows for buoys to be stored using indivual methods like 'addBuoy', 'updateBuoyData', and'subscribeToBuoys'.
+
+* addBuoy stores buoys objects
+* updateBuoyData adds new information, including swell height and period to the added buoys.
+* subscribeToBuoys allows for the addition of buoys within the map bounds
+
+#### Index
+
+The index file is used to create the new server which will allow for the websockets to active and send data to the front end once it's receieved from the buoys.
+  
+#### JSON_RPC 
+
+The JSON_RPC file builds all methods through which these objecst will be sent and recieved.
+
+* Build Request buils a JSONRPC request
+* Build Response builds the 'ok' response from a sucessfully requested JSON RPC object
+* Build Notification builds the buoy update notification for incoming new buoy data
+* Build Error, builds all of the potential JSON RPC response errors (invalid JSON, request object, method etc.)
+
 
 ### Send JSON-RPC objects through these websockets, recieve an 'ok' response to assure objects have been recieved.
 
@@ -38,10 +59,14 @@ This backend serves the following purposes.
 }
 ````
 
-### Store all added buoys, updated buoys and notifications from buoys as new data comes in.
+### Storage
+
+Store all added buoys, updated buoys and notifications from buoys as new data comes in.
 
 * Create means through which all important JSON-RPC objects will be stored
   * Store addBuoy methods
   * Store updateBuoyData methods
   * Store subscribeBuoyData methods
   * Store buoyNotifications
+
+ 
