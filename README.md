@@ -60,9 +60,3 @@ Here is an example of that request, response exchange...
 
 * Build Notification builds the buoy update notification for incoming new buoy data
 * Build Error, builds all of the potential JSON RPC response errors (invalid JSON, request object, method etc.)
-
-
-### Send JSON-RPC objects through these websockets, recieve an 'ok' response to assure objects have been recieved.
-
-
-
