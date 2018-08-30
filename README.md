@@ -60,3 +60,12 @@ Here is an example of that request, response exchange...
 
 * Build Notification builds the buoy update notification for incoming new buoy data
 * Build Error, builds all of the potential JSON RPC response errors (invalid JSON, request object, method etc.)
+
+
+#### Tests
+
+The test directory was used to for the follwing purposes.
+
+* Test the exchange of json-rpc objects, request and response.
+* Testing that a client was active and capable of being sent messages
+* Test server for sending all of the aforementioned steps
